@@ -1,0 +1,3 @@
+# Only used if this whole folder is dragged onto Netlify Drop:
+# serve the app from public/ so the site still opens.
+/*  /public/:splat  200

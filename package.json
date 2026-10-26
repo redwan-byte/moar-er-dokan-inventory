@@ -1,0 +1,10 @@
+{
+  "name": "moar-er-dokan-inventory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Simple inventory for Moar er Dokan, hosted on Netlify",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.6"
+  }
+}

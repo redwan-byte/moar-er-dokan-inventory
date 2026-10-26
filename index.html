@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moar er Dokan · Inventory</title>
+  <meta name="description" content="Stock, sales and restocks for every Moar er Dokan branch.">
+  <meta name="theme-color" content="#59ad94">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23008b68'/%3E%3Cpath d='M14 26h36l-3 24H17z' fill='%23fff'/%3E%3Cpath d='M24 26v-5a8 8 0 0 1 16 0v5' fill='none' stroke='%23c5e2da' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="card hero">
+      <h1>Moar er Dokan</h1>
+      <p class="sub">Inventory — stock, sales and restocks for every branch.</p>
+      <div class="hero-bar">
+        <label class="branch-pick">Branch <select id="branchPick" aria-label="Branch"></select></label>
+        <a class="sync" id="sync" href="#settings" title="Where your data is saved"><i></i>Connecting…</a>
+      </div>
+    </header>
+
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <a href="#stock" data-tab="stock">Stock</a>
+      <a href="#sell" data-tab="sell">Sell</a>
+      <a href="#history" data-tab="history">History</a>
+      <a href="#settings" data-tab="settings">Settings</a>
+    </nav>
+
+    <main id="view">
+      <section class="card note">Loading…</section>
+    </main>
+
+    <footer class="foot">Moar er Dokan · Inventory</footer>
+  </div>
+
+  <dialog id="modal"></dialog>
+  <input type="file" id="restoreFile" accept="application/json,.json" hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
