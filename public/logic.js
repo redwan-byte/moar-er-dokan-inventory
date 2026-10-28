@@ -5,7 +5,7 @@ export function emptyState() {
   return {
     version: 1,
     settings: {
-      branches: ["Gulshan Link"],
+      branches: ["Gulshan Link", "Banani", "Dhanmondi"],
       buyers: ["Member", "Guest", "Staff"],
       lowStock: 5,
     },
